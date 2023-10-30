@@ -1,6 +1,6 @@
 # flutter_clean_architecture_and_tdd
 
-A new Flutter project.
+Flutter example of clean architecture design, using bloc for state managment, get_it for dependency injection, http for remote api calls, and all backed up with unit test.
 
 ## Getting Started
 
