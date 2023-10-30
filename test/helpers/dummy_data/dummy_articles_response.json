@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "totalResults": 1,
+  "articles": [
+    {
+      "author": "Chris Isidore, Vanessa Yurkevich",
+      "title": "UAW reaches tentative agreement with Stellantis, expands strike at GM - CNN",
+      "description": "The UAW has reached a tentative agreement with Stellantis, which makes vehicles under the Dodge, Ram, Chrysler and Jeep brands.",
+      "url": "https://www.cnn.com/2023/10/28/business/uaw-stellantis-deal/index.html",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/231027165526-uaw-walk-out-09222023.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2023-10-29T01:51:00Z",
+      "content": "The United Auto Workers unioncame to a tenative agreement with Stellantis Saturday. But it expanded the strike against General Motors, Americas largest automaker and the last remaining Big Three hold… [+8575 chars]"
+    }
+  ]
+}

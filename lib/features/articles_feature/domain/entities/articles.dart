@@ -1,6 +1,7 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_clean_architecture_and_tdd/features/articles_feature/domain/entities/article.dart';
 
-class ArticlesEntity {
+class ArticlesEntity extends Equatable {
   String? status;
   int? totalResults;
   List<ArticleEntity?>? articles;
@@ -26,4 +27,7 @@ class ArticlesEntity {
         articles != null ? articles!.map((v) => v?.toJson()).toList() : null;
     return data;
   }
+
+  @override
+  List<Object?> get props => [status, totalResults, articles];
 }
