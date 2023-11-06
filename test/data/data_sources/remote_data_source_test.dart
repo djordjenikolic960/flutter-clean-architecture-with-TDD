@@ -37,7 +37,7 @@ void main() {
       expect(result, isA<ArticlesModel>());
     });
 
-    test('should throw server exception with status code 200', () async {
+    test('should throw server exception with status code 404', () async {
       //arrange
       when(mockHttpClient.get(Uri.parse(Urls.articlesByCategory(category)))).thenAnswer((_) async => http.Response(
         'server error',

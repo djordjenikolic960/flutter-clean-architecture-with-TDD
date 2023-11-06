@@ -1,11 +1,18 @@
+import 'dart:async';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_clean_architecture_and_tdd/features/articles_feature/presentation/bloc/article_bloc.dart';
 import 'package:flutter_clean_architecture_and_tdd/features/articles_feature/presentation/bloc/article_event.dart';
 import 'package:flutter_clean_architecture_and_tdd/features/articles_feature/presentation/bloc/article_state.dart';
-
+import 'package:http/http.dart' as http;
 class ArticlesPage extends StatelessWidget {
-  const ArticlesPage({super.key});
+  ArticlesPage({super.key});
+
+  StreamController<double> progressStreamController = StreamController();
+  StreamController<bool> downloadCompleteStreamController = StreamController();
+  StreamController<String> errorStreamController = StreamController();
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +34,8 @@ class ArticlesPage extends StatelessWidget {
       ),
     ]);
   }
+
+
 
   _buildBody() {
     return BlocBuilder<ArticlesBloc, ArticlesState>(builder: (context, state) {
